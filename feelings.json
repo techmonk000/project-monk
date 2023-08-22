@@ -1,0 +1,46 @@
+{
+    "feelings":[
+        {
+            "tag":"greeting",
+            "patterns":["hello","hii","hey","wake up","hey monk"
+            ],
+            "responses":["Hello Sir","How Are You Sir.","Always For You Sir",
+                "Hello","Here's Your Assistant."
+            ]
+        },
+        {
+            "tag":"bye",
+            "patterns":["bye","goodbye","see you later","sleep","exit","thats all for now","you can rest now"
+            ],
+            "responses":["Bye.","I am Going.","Bye Sir.","Good Bye",
+                "It'll be Nice To Meet You Again.","See You Later"
+            ]
+        },
+        {
+            "tag":"health",
+            "patterns":["how are you","how you","are you fine?","are you good"
+            ],
+            "responses":["Fine.","Perfect.","Cool.",
+                "Like You.","Are you Fine? I'm Fine."
+            ]
+
+        },
+        {
+            "tag": "Confirmation",
+            "patterns": ["got it", "confirm", "ok"],
+            "responses": ["Got it!","Confirmed.","Okay, noted.","Understood."]
+        },
+        {
+            "tag": "Query Acknowledgement",
+            "patterns": ["looking into that", "find the information", "give me a moment"],
+            "responses": ["I'm looking into that for you.","Let me find the information you need.","Give me a moment, please."]
+        },
+        {
+            "tag": "Information",
+            "patterns": ["what is", "tell me about", "explain"],
+            "responses": ["Sure, here's the information you requested...","Certainly! Here's what I know...","I'd be happy to provide you with some information..."]
+        }
+        
+        
+    ]
+}
