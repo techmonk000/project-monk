@@ -10,15 +10,14 @@
         },
         {
             "tag":"bye",
-            "patterns":["bye","goodbye","see you later","sleep","exit","thats all for now","you can rest now"
-            ],
+            "patterns":["bye","goodbye","see you later","sleep","thats all for now"],
             "responses":["Bye.","I am Going.","Bye Sir.","Good Bye",
-                "It'll be Nice To Meet You Again.","See You Later"
+                "It'll be Nice To Meet You Again."
             ]
         },
         {
             "tag":"health",
-            "patterns":["how are you","how you","are you fine?","are you good"
+            "patterns":["how are you","how you","are you fine?","are you good","State your health"
             ],
             "responses":["Fine.","Perfect.","Cool.",
                 "Like You.","Are you Fine? I'm Fine."
@@ -27,18 +26,28 @@
         },
         {
             "tag": "Confirmation",
-            "patterns": ["got it", "confirm", "ok"],
-            "responses": ["Got it!","Confirmed.","Okay, noted.","Understood."]
+            "patterns": ["got it", "confirm", "ok","please see to it","ok i understand"],
+            "responses": ["Got it!","Confirmed.","Okay, noted.","Understood.","I get it"]
         },
         {
             "tag": "Query Acknowledgement",
-            "patterns": ["looking into that", "find the information", "give me a moment"],
-            "responses": ["I'm looking into that for you.","Let me find the information you need.","Give me a moment, please."]
+            "patterns": ["looking into that", "find the information", "give me a moment","fetching your query","finding it"],
+            "responses": ["I'm looking into that for you.","Let me find the information you need.","Give me a moment, please.","Fetching the information..","Certainly! Here's what I know..."]
         },
         {
             "tag": "Information",
-            "patterns": ["what is", "tell me about", "explain"],
-            "responses": ["Sure, here's the information you requested...","Certainly! Here's what I know...","I'd be happy to provide you with some information..."]
+            "patterns": ["what is", "tell me about", "explain","Please find it","Explain me this","Explain me"],
+            "responses": ["Sure, here's the information you requested...","Certainly! Here's what I know...","I'd be happy to provide you with some information...","Here is your information....","Fetching the information.."]
+        },
+        {
+            "tag": "Thanking",
+            "patterns": ["thank you", "thanks", "appreciate"],
+            "responses": ["You're welcome!","Glad I could help!","No problem at all."]
+        },
+        {
+            "tag": "Apology",
+            "patterns": ["sorry", "apologize", "my apologies"],
+            "responses": ["I'm sorry, I couldn't find that information.","My apologies, I'm still learning.","I'm sorry for any confusion."]
         }
         
         

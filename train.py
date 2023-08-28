@@ -1,4 +1,5 @@
 import json
+
 import torch
 import torch.nn as nn
 from torch.utils.data import Dataset, DataLoader
@@ -53,8 +54,10 @@ num_epochs = 1000
 batch_size = 8
 learning_rate = 0.002
 input_size = len(x_train[0])
+print(input_size)
 hidden_size = 8
 output_size = len(tags)
+print(output_size)
 
 print("Training the model...")
 
@@ -77,13 +80,10 @@ dataset = ChatDataset()
 
 train_loader = DataLoader(
     dataset, batch_size=batch_size, shuffle=True, num_workers=0)
-
 device = torch.device('cuda' if torch.cuda.is_available() else 'cpu')
 model = Net(input_size, output_size, hidden_size).to(device=device)
 criterion = nn.CrossEntropyLoss()
-
 optimizer = torch.optim.Adam(model.parameters(), lr=learning_rate)
-
 for epoch in range(num_epochs):
     for (words, labels) in train_loader:
         words = words.to(device=device)
